@@ -162,6 +162,7 @@ img{max-width: 100%;}
 }
 .content-data_context{
 	padding: 5rem 4rem;
+	position: relative;
 }
 .content-context a.link{ font-size: 1.5rem; }
 .content-context:nth-child(1) a.link, .content-context:nth-child(3) a.link,.content-context:nth-child(5) a.link {margin-right: 0;}
@@ -188,6 +189,22 @@ img{max-width: 100%;}
 }
 .content-data_image{
 	order: -1;
+}
+.content-chevron{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	position: absolute;
+    bottom: 3rem;
+    left: 3rem;
+}
+.content-chevron--modify{
+	right: 3rem;
+	left: unset;
+}
+.content-chevron a{
+	border: 1px solid #e3e3e3;
+	padding: 0.3rem 0.5rem;
 }
 @media (min-width: 1024px) {
 	.content-context{
